@@ -44,5 +44,6 @@ public class Dictionary {
     medium.add("flexible");
     
     //hard
+    hard.add("alchemist", "amplitude", "authorize", "awestruck", "binocular", "gymnastic", "hydration", "numerical", "nightmare", "supremacy");
     hard.add("academical", "biographer", "bibliology", "cassiopeia", "cryptogram", "elliptical", "hemisphere", "heliograph", "phenomenal", "philosophy");
 }
