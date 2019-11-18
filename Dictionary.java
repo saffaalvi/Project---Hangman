@@ -42,4 +42,7 @@ public class Dictionary {
     medium.add("momentum");
     medium.add("organize");
     medium.add("flexible");
+    
+    //hard
+    hard.add("academical", "biographer", "bibliology", "cassiopeia", "cryptogram", "elliptical", "hemisphere", "heliograph", "phenomenal", "philosophy");
 }
