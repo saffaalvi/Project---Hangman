@@ -78,13 +78,14 @@ public class Dictionary {
     medium.add("flexible");
     
     //hard
+  //hard
     String list9[] = {"alchemist", "amplitude", "authorize", "awestruck", "binocular", "gymnastic", "hydration", "numerical", "nightmare", "supremacy"};
     hard.addAll(Arrays.asList(list9));
     String list10[] = {"academical", "biographer", "bibliology", "cassiopeia", "cryptogram", "elliptical", "hemisphere", "heliograph", "phenomenal", "philosophy"};
     hard.addAll(Arrays.asList(list10));
-	for (String str:medium)
-	{
-		System.out.println(str.toString());
-	}
+    String list11[] = {"accommodate", "affirmative", "blasphemous", "calligraphy", "designation", "evaporation", "exclamation", "holographic", "observatory", "seismograph"}; 
+    hard.addAll(Arrays.asList(list11));
+    String list12[] = {"alphabetical", "amphitheater", "catastrophic", "chromosphere", "evolutionist", "hieroglyphic", "hippopotamus", "intellectual", "photographer", "sophisticate"}; 
+    hard.addAll(Arrays.asList(list12));
 }
 }
