@@ -10,6 +10,38 @@ public class Dictionary {
     ArrayList<String> medium = new ArrayList<String>();
     ArrayList<String> hard = new ArrayList<String>();
 
+    //easy
+        easy.add("app");
+        easy.add("fat");
+        easy.add("sun");
+        easy.add("cub");
+        easy.add("cat");
+        easy.add("mat");
+        easy.add("hat");
+        easy.add("fun");
+        easy.add("run");
+        easy.add("map");
+        easy.add("mill");
+        easy.add("kill");
+        easy.add("fill");
+        easy.add("will");
+        easy.add("each");
+        easy.add("most");
+        easy.add("inch");
+        easy.add("horn");
+        easy.add("join");
+        easy.add("duck");
+        easy.add("basil");
+        easy.add("chick");
+        easy.add("magic");
+        easy.add("annoy");
+        easy.add("cards");
+        easy.add("nasty");
+        easy.add("visit");
+        easy.add("upset");
+        easy.add("laugh");
+        easy.add("prize");
+
     // Medium ArrayList
     // 6 words
     medium.add("agency");
