@@ -1,5 +1,3 @@
-//Dictionary.java
-
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -11,6 +9,7 @@ public class Dictionary {
     ArrayList<String> hard = new ArrayList<String>();
 
     //easy
+    //index 0 to 29
         easy.add("app");
         easy.add("fat");
         easy.add("sun");
@@ -43,6 +42,7 @@ public class Dictionary {
         easy.add("prize");
 
     // Medium ArrayList
+    //index 0 to 29
     // 6 words
     medium.add("agency");
     medium.add("airbag");
@@ -78,7 +78,7 @@ public class Dictionary {
     medium.add("flexible");
     
     //hard
-  //hard
+    //index 0 to 39
     String list9[] = {"alchemist", "amplitude", "authorize", "awestruck", "binocular", "gymnastic", "hydration", "numerical", "nightmare", "supremacy"};
     hard.addAll(Arrays.asList(list9));
     String list10[] = {"academical", "biographer", "bibliology", "cassiopeia", "cryptogram", "elliptical", "hemisphere", "heliograph", "phenomenal", "philosophy"};
@@ -87,5 +87,18 @@ public class Dictionary {
     hard.addAll(Arrays.asList(list11));
     String list12[] = {"alphabetical", "amphitheater", "catastrophic", "chromosphere", "evolutionist", "hieroglyphic", "hippopotamus", "intellectual", "photographer", "sophisticate"}; 
     hard.addAll(Arrays.asList(list12));
+    
+    for (String str:easy)
+	{
+		System.out.println(easy.indexOf(str) + " " + str.toString());
+	}
+    for (String str:medium)
+	{
+		System.out.println(medium.indexOf(str) + " " + str.toString());
+	}
+    for (String str:hard)
+	{
+		System.out.println(hard.indexOf(str) + " " + str.toString());
+	}
 }
 }
