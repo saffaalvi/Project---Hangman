@@ -2,12 +2,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Dictionary {
-	public static void main(String[] args) {
-
-    ArrayList<String> easy = new ArrayList<String>();
-    ArrayList<String> medium = new ArrayList<String>();
-    ArrayList<String> hard = new ArrayList<String>();
-
+	
+     ArrayList<String> easy = new ArrayList<String>();
+     ArrayList<String> medium = new ArrayList<String>();
+     ArrayList<String> hard = new ArrayList<String>();
+     public Dictionary() {
     //easy
     //index 0 to 29
         easy.add("app");
@@ -87,18 +86,19 @@ public class Dictionary {
     hard.addAll(Arrays.asList(list11));
     String list12[] = {"alphabetical", "amphitheater", "catastrophic", "chromosphere", "evolutionist", "hieroglyphic", "hippopotamus", "intellectual", "photographer", "sophisticate"}; 
     hard.addAll(Arrays.asList(list12));
+	} 
+    public ArrayList<String> getEasy()
+    {
+    	return easy;
+    }
+    public ArrayList<String> getMed()
+    {
+    	return medium;
+    }
+    public ArrayList<String> getHard()
+    {
+    	return hard;
+    }
     
-    for (String str:easy)
-	{
-		System.out.println(easy.indexOf(str) + " " + str.toString());
-	}
-    for (String str:medium)
-	{
-		System.out.println(medium.indexOf(str) + " " + str.toString());
-	}
-    for (String str:hard)
-	{
-		System.out.println(hard.indexOf(str) + " " + str.toString());
-	}
-}
+    
 }
