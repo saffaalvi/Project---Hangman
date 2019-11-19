@@ -4,7 +4,7 @@ public class levelMedium extends Dictionary
 {
 	public levelMedium()
 	{
-	    Random rand = new Random();
+		Random rand = new Random();
 	    int rnd = rand.nextInt(medium.size());
 	    String word = medium.get(rnd);
 	    System.out.println(word);
