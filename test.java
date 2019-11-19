@@ -19,18 +19,19 @@ public class test{
 		{
 			System.out.println(temp.getHard().indexOf(str)+ " " + str.toString());
 		}**/
-		System.out.println("Enter level (easy, medium, hard): ");
+		
 		Scanner sc = new Scanner(System.in);
-		String level = sc.next();
-		if (level == "easy")
+		System.out.println("Enter level (1 for easy, 2 for medium, 3 for hard): ");
+		int level = sc.nextInt();
+		if (level == 1)
 		{
 			levelEasy game = new levelEasy();
 		}
-		if (level == "medium")
+		if (level == 2)
 		{
 			levelMedium game = new levelMedium();
 		}
-		if (level == "hard")
+		if (level == 3)
 		{
 			levelHard game = new levelHard();
 		}
