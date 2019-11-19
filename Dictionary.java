@@ -8,73 +8,17 @@ public class Dictionary {
      ArrayList<String> hard = new ArrayList<String>();
      public Dictionary() {
     //easy
-    //index 0 to 29
-        easy.add("app");
-        easy.add("fat");
-        easy.add("sun");
-        easy.add("cub");
-        easy.add("cat");
-        easy.add("mat");
-        easy.add("hat");
-        easy.add("fun");
-        easy.add("run");
-        easy.add("map");
-        easy.add("mill");
-        easy.add("kill");
-        easy.add("fill");
-        easy.add("will");
-        easy.add("each");
-        easy.add("most");
-        easy.add("inch");
-        easy.add("horn");
-        easy.add("join");
-        easy.add("duck");
-        easy.add("basil");
-        easy.add("chick");
-        easy.add("magic");
-        easy.add("annoy");
-        easy.add("cards");
-        easy.add("nasty");
-        easy.add("visit");
-        easy.add("upset");
-        easy.add("laugh");
-        easy.add("prize");
+    String[] list = {"app", "fat", "sun", "cub", "cat", "mat", "hat", "fun", "run", "map", "mill", "kill", "fill", "will",
+                "each", "most", "inch", "horn", "join", "duck", "basil", "chick", "magic", "annoy", "cards", "nasty",
+                "visit", "upset", "laugh", "prize"};
+        easy.addAll(Arrays.asList(list));
 
     // Medium ArrayList
-    //index 0 to 29
-    // 6 words
-    medium.add("agency");
-    medium.add("airbag");
-    medium.add("alarms");
-    medium.add("cheque");
-    medium.add("jacket");
-    medium.add("honest");
-    medium.add("impair");
-    medium.add("junior");
-    medium.add("levels");
-    medium.add("moused");
-    // 7 words
-    medium.add("attacks");
-    medium.add("barrier");
-    medium.add("battled");
-    medium.add("choices");
-    medium.add("harness");
-    medium.add("laptops");
-    medium.add("lighter");
-    medium.add("tourism");
-    medium.add("unwound");
-    medium.add("voyager");
-    // 8 words
-    medium.add("bulletin");
-    medium.add("calendar");
-    medium.add("collapse");
-    medium.add("criminal");
-    medium.add("teaching");
-    medium.add("southern");
-    medium.add("proposal");
-    medium.add("momentum");
-    medium.add("organize");
-    medium.add("flexible");
+   String[] list ={"agency","airbag","alarms","cheque","jacket","honest","impair","junior","levels","moused",
+                "attacks", "barrier", "battled", "choices", "harness", "laptops", "lighter", "tourism","unwound",
+                "voyager","bulletin","calendar","collapse","criminal","teaching","southern","proposal","momentum",
+                "organize","flexible"};
+        medium.addAll(Arrays.asList(list));
     
     //hard
     //index 0 to 39
