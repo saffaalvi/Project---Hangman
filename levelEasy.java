@@ -5,9 +5,10 @@ public class levelEasy extends Dictionary
 {
 	public levelEasy()
 	{
-		Random rand = new Random();
-	    int rnd = rand.nextInt(easy.size());
-	    System.out.println(easy.get(rnd));
-    }
+	    String word = easy.get(rnd);
+	    System.out.println(word);
+	    for (int i=0; i<word.length(); i++)
+	    System.out.print("_ ");
+    	}
 }
  
