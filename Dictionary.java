@@ -48,11 +48,9 @@ public class Dictionary {
 		if(wrong_guesses>=0){
 		    System.out.println("\t   --------");
 		    System.out.print("\t  |\n\t  |\n\t  |\n");
-		    wrong_guesses++;
 		}
 		if(wrong_guesses>=1){
 		    System.out.print("\t ---\n\t|   |\n\t ---\n");
-		    wrong_guesses+=3;
 		}
 		if(wrong_guesses==2){
 		     System.out.print("\t  |\n\t  |\n\t  |\n\t  |\n\t  |\n");
@@ -60,16 +58,14 @@ public class Dictionary {
 		else if(wrong_guesses==3){
 		    System.out.print("\t  |\t/\n\t  |   /\n\t  | /\n\t  |\n\t  |\n");
 		}
-		 else if(wrong_guesses==4){
+		 else if(wrong_guesses>=4){
 		    System.out.print("      \\   |   /\n       \\  |  /\n\t\\ | /\n\t  |\n\t  |\n");
-		    wrong_guesses+=2;
 		}
 		if(wrong_guesses==5){
 		    System.out.println("\t    \\\n\t     \\\n\t      \\");
 		}
 		else if(wrong_guesses==6){
 		    System.out.println("\t/   \\\n       /     \\\n      /       \\");
-		    System.out.println("  GAME OVER! YOU LOST!!!");
 		    //end game or something
 		}
 	}
