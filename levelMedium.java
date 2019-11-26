@@ -10,22 +10,24 @@ public class levelMedium extends Dictionary
 		Random rand = new Random();
 	    int rnd = rand.nextInt(medium.size());
 	    word = medium.get(rnd);
-	    System.out.println(word);
+	    //System.out.println(word);
 	    char[] underscore = new char[word.length()];
 	    for (int i=0; i<word.length(); i++)
 	    {
 	    	underscore[i] = '-';
+	    	System.out.print(underscore[i]);
 	    }
 	    while(true)
 	    {
-            System.out.print("Enter a letter: ");
+            System.out.print("\nEnter a letter: ");
             Scanner sc = new Scanner(System.in);
             char guess = sc.next().charAt(0);	
             check(guess, underscore);
-            System.out.println(underscore);
-            if (countWrong==5)
+            if (countWrong!=6)
+                System.out.println(underscore);
+            if (countWrong==6)
             {
-            	System.out.println("SORRY! YOU LOSE");
+            	System.out.println("SORRY! YOU LOSE! THE WORD WAS " + word);
             	break;
             }
             if (countRight==word.length())
@@ -33,7 +35,6 @@ public class levelMedium extends Dictionary
             	System.out.println("YOU WIN");
             	break;
             }
-            	
         }
 	    
 	}
