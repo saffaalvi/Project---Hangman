@@ -57,6 +57,8 @@ public class levelMedium extends Dictionary
 	    {
 	    	System.out.println("wrong!");
 	    	countWrong++;
+	    	System.out.println("WRONG LETTERS: " + countWrong);
+	    	printHangman(countWrong);
 	    }
 	}
 }
