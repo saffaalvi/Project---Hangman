@@ -22,8 +22,13 @@ public class levelMedium extends Dictionary
             Scanner sc = new Scanner(System.in);
             char guess = sc.next().charAt(0);	
             check(guess, underscore);
-            		
             System.out.println(underscore);
+            if (count==word.length())
+            {
+            	System.out.println("YOU WIN");
+            	break;
+            }
+            	
         }
 	    
 	}
@@ -36,6 +41,7 @@ public class levelMedium extends Dictionary
 	    	{
 	    		underscore[i]=guess;
 	    		ch = 1;
+	    		count++;
 	    	}		
 	    }
 	    if (ch==1)
@@ -44,6 +50,6 @@ public class levelMedium extends Dictionary
 	    }
 	    else
 	    	System.out.println("wrong!");
-
+	    System.out.println(count);
 	}
 }
