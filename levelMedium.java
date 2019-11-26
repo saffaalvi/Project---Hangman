@@ -2,14 +2,48 @@ import java.util.*;
 
 public class levelMedium extends Dictionary
 {
+	public static String word, newWord;
+	public static int count=0;
+	
 	public levelMedium()
 	{
 		Random rand = new Random();
 	    int rnd = rand.nextInt(medium.size());
-	    String word = medium.get(rnd);
+	    word = medium.get(rnd);
 	    System.out.println(word);
+	    char[] underscore = new char[word.length()];
 	    for (int i=0; i<word.length(); i++)
-	    	System.out.print("_ ");
+	    {
+	    	underscore[i] = '-';
+	    }
+	    for(int i=0; i<word.length(); i++)
+	    {
+            System.out.print("Enter a letter: ");
+            Scanner sc = new Scanner(System.in);
+            char guess = sc.next().charAt(0);	
+            check(guess, underscore);
+            		
+            System.out.println(underscore);
+        }
+	    
 	}
-    
+	public static void check (char guess, char[] underscore)
+	{
+		int ch = 0;
+	    for(int i=0; i<word.length(); i++)
+	    {
+	    	if (word.charAt(i) == guess)
+	    	{
+	    		underscore[i]=guess;
+	    		ch = 1;
+	    	}		
+	    }
+	    if (ch==1)
+	    {
+	    	System.out.println("correct!");
+	    }
+	    else
+	    	System.out.println("wrong!");
+
+	}
 }
