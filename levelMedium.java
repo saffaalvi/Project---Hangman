@@ -3,7 +3,7 @@ import java.util.*;
 public class levelMedium extends Dictionary
 {
 	public static String word, newWord;
-	public static int count=0;
+	public static int countRight=0, countWrong=0;
 	
 	public levelMedium()
 	{
@@ -16,14 +16,19 @@ public class levelMedium extends Dictionary
 	    {
 	    	underscore[i] = '-';
 	    }
-	    for(int i=0; i<word.length(); i++)
+	    while(true)
 	    {
             System.out.print("Enter a letter: ");
             Scanner sc = new Scanner(System.in);
             char guess = sc.next().charAt(0);	
             check(guess, underscore);
             System.out.println(underscore);
-            if (count==word.length())
+            if (countWrong==5)
+            {
+            	System.out.println("SORRY! YOU LOSE");
+            	break;
+            }
+            if (countRight==word.length())
             {
             	System.out.println("YOU WIN");
             	break;
@@ -41,7 +46,7 @@ public class levelMedium extends Dictionary
 	    	{
 	    		underscore[i]=guess;
 	    		ch = 1;
-	    		count++;
+	    		countRight++;
 	    	}		
 	    }
 	    if (ch==1)
@@ -49,7 +54,9 @@ public class levelMedium extends Dictionary
 	    	System.out.println("correct!");
 	    }
 	    else
+	    {
 	    	System.out.println("wrong!");
-	    System.out.println(count);
+	    	countWrong++;
+	    }
 	}
 }
