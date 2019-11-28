@@ -4,7 +4,8 @@ public class levelHard extends Dictionary
 {
 	public static String word, newWord;
 	public static int countRight=0, countWrong=0;
-	
+	public static char[] wrongLetters = new char[6];
+	public static int c=0;
 	public levelHard()
 	{
 		Random rand = new Random();
@@ -58,8 +59,13 @@ public class levelHard extends Dictionary
 	    {
 	    	System.out.println("wrong!");
 	    	countWrong++;
-	    	System.out.println("WRONG LETTERS: " + countWrong);
 	    	printHangman(countWrong);
+	    	wrongLetters[c]=guess;
+	        c++;
 	    }
+		System.out.print("WRONG LETTERS: "); 
+	    for(int i=0; i<6; i++)
+    		System.out.print(wrongLetters[i] + " ");
+		System.out.print("\n"); 
 	}
 }
