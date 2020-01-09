@@ -1,5 +1,5 @@
 import java.util.*;
-
+//Easy Level
 public class levelEasy extends Dictionary
 {
 	public static String word, newWord;
@@ -8,17 +8,17 @@ public class levelEasy extends Dictionary
 	public static int c=0;
 	public levelEasy()
 	{
-		Random rand = new Random();
+	    Random rand = new Random();
 	    int rnd = rand.nextInt(easy.size());
 	    word = easy.get(rnd);
 	    //System.out.println(word);
-	    char[] underscore = new char[word.length()];
-	    for (int i=0; i<word.length(); i++)
+	    char[] underscore = new char[word.length()];	//array of underscores, length of random word chosen 
+	    for (int i=0; i<word.length(); i++)		//populate array with underscores, print number of underscores
 	    {
 	    	underscore[i] = '-';
 	    	System.out.print(underscore[i]);
 	    }
-	    while(true)
+	    while(true)		//ask user for guess, check if correct and keep count 
 	    {
             System.out.print("\nEnter a letter: ");
             Scanner sc = new Scanner(System.in);
@@ -41,7 +41,7 @@ public class levelEasy extends Dictionary
 	}
 	public static void check (char guess, char[] underscore)
 	{
-		int ch = 0;
+	    int ch = 0;
 	    for(int i=0; i<word.length(); i++)
 	    {
 	    	if (word.charAt(i) == guess)
@@ -63,9 +63,9 @@ public class levelEasy extends Dictionary
 	    	wrongLetters[c]=guess;
 	        c++;
 	    }
-		System.out.print("WRONG LETTERS: "); 
+	    System.out.print("WRONG LETTERS: "); 
 	    for(int i=0; i<6; i++)
     		System.out.print(wrongLetters[i] + " ");
-		System.out.print("\n"); 
+	    System.out.print("\n"); 
 	}
 }
