@@ -1,5 +1,5 @@
 import java.util.*;
-//this class starts the game, asks user for which level they would like to play
+//this class asks user for which level they would like to play and starts the game
 public class test
 {
     //main method
